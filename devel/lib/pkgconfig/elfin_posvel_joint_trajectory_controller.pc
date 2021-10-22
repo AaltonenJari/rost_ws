@@ -1,0 +1,8 @@
+prefix=/home/jari/rost_ws/devel
+
+Name: elfin_posvel_joint_trajectory_controller
+Description: Description of elfin_posvel_joint_trajectory_controller
+Version: 0.0.0
+Cflags: -I/home/jari/rost_ws/src/rosi_elfin/src/elfin_robot/elfin_posvel_joint_trajectory_controller/include
+Libs: -L${prefix}/lib -lelfin_posvel_joint_trajectory_controller
+Requires: controller_interface elfin_hardware_interface joint_trajectory_controller roscpp

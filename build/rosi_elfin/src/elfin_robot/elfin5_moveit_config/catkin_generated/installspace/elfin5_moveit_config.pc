@@ -1,0 +1,8 @@
+prefix=/home/jari/rost_ws/install
+
+Name: elfin5_moveit_config
+Description: Description of elfin5_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

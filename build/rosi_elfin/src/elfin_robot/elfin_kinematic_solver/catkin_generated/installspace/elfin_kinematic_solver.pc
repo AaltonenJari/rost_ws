@@ -1,0 +1,8 @@
+prefix=/home/jari/rost_ws/install
+
+Name: elfin_kinematic_solver
+Description: Description of elfin_kinematic_solver
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lelfin_kinematic_solver
+Requires: roscpp

@@ -1,0 +1,8 @@
+prefix=/home/jari/rost_ws/devel
+
+Name: elfin_description
+Description: Description of elfin_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/jari/rost_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/jari/rost_ws/src/rosi_elfin/src/elfin_robot/elfin_ikfast_plugins/elfin10_ikfast_plugin/include/**",
+        "/home/jari/rost_ws/src/rosi_elfin/src/elfin_robot/elfin_ikfast_plugins/elfin3_ikfast_plugin/include/**",
+        "/home/jari/rost_ws/src/rosi_elfin/src/elfin_robot/elfin_ikfast_plugins/elfin5_ikfast_plugin/include/**",
+        "/home/jari/rost_ws/src/rosi_elfin/src/elfin_robot/elfin_basic_api/include/**",
+        "/home/jari/rost_ws/src/rosi_elfin/src/elfin_robot/elfin_ethercat_driver/include/**",
+        "/home/jari/rost_ws/src/rosi_elfin/src/elfin_robot/elfin_hardware_interface/include/**",
+        "/home/jari/rost_ws/src/rosi_elfin/src/elfin_robot/elfin_kinematic_solver/include/**",
+        "/home/jari/rost_ws/src/rosi_elfin/src/elfin_robot/elfin_postrq_joint_trajectory_controller/include/**",
+        "/home/jari/rost_ws/src/rosi_elfin/src/elfin_robot/elfin_posvel_joint_trajectory_controller/include/**",
+        "/home/jari/rost_ws/src/rosi_elfin/src/elfin_robot/elfin_ros_control/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

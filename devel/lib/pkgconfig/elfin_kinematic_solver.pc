@@ -1,0 +1,8 @@
+prefix=/home/jari/rost_ws/devel
+
+Name: elfin_kinematic_solver
+Description: Description of elfin_kinematic_solver
+Version: 0.0.0
+Cflags: -I/home/jari/rost_ws/src/rosi_elfin/src/elfin_robot/elfin_kinematic_solver/include
+Libs: -L${prefix}/lib -lelfin_kinematic_solver
+Requires: roscpp

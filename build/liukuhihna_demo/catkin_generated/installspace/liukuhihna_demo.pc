@@ -1,0 +1,8 @@
+prefix=/home/jari/rost_ws/install
+
+Name: liukuhihna_demo
+Description: Description of liukuhihna_demo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

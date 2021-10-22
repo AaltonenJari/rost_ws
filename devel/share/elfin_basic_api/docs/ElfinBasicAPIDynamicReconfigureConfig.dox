@@ -1,0 +1,6 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~velocity_scaling" : \b [double] the max velocity scaling min: 0.01, default: 0.4, max: 1.0
+

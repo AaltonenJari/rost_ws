@@ -1,0 +1,8 @@
+prefix=/home/jari/rost_ws/install
+
+Name: samk_robotiq
+Description: Description of samk_robotiq
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

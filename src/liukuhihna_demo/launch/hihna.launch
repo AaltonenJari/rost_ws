@@ -1,0 +1,27 @@
+<launch>
+    <include file="$(find gazebo_ros)/launch/empty_worl.launch" />
+
+    <param name="robot_description" command="$(find xacro)/xacro 
+    '$(liukuhihna_demo)/urdf/liukuhihna.urdf.xacro'" />
+
+    <arg name="kuutio_xacro" value="$(find liukuhihna_demo)/urdf/kuutio.urdf.xacro" />
+
+    <group ns="kuutiot">
+        <param name="pun" command="$(find  xacro)/xacro '$(arg kuutio_xacro)' 
+        pun:=1 vih:=0 sininen:=0 gazebo:=Red" />
+        <param name="vih" command="$(find  xacro)/xacro '$(arg kuutio_xacro)' 
+        pun:=0 vih:=1 sininen:=0 gazebo:=Green" />
+        <param name="sininen" command="$(find  xacro)/xacro '$(arg kuutio_xacro)' 
+        pun:=0 vih:=0 sininen:=1 gazebo:=Blue" />
+        <param name="valk" command="$(find  xacro)/xacro '$(arg kuutio_xacro)'" />
+    </group>
+
+    <node name="liukuhihna_spawn" pkg="gazebo_ros" type="spawn_model"
+    ns="liukuhihna" args="-urdf -param /robot_description -model liukuhihna"
+    output="screen" respawn="false" />
+
+    <node name="kuutio_spawn" pkg="gazebo_ros" type="spawn_model"
+    args="-urdf -param /kuutiot/pun -model pun_kuutio -z 3"
+    output="screen" respawn="false" />
+
+</launch>

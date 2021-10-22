@@ -1,0 +1,8 @@
+prefix=/home/jari/rost_ws/devel
+
+Name: icim_pallet
+Description: Description of icim_pallet
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

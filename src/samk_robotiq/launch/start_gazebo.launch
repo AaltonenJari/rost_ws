@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find gazebo_ros)/launch/empty_world.launch" />
+    
+    <param name="robot_description" textfile="$(find samk_description)/urdf/samk_robotiq.urdf" />
+    
+    <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model" args="-urdf -param robot_description 
+    -model samk_robotiq" respawn="false" output="screen" />
+     
+    <rosparam file="$(find samk_robotiq)/config/ros_controllers.yaml" command="load"/>
+     
+    <node name="controller_spawner" pkg="controller_manager" type="spawner"
+    respawn="false" output="screen" args="
+        joint_state_controller
+        elfin_arm_controller
+        robotiq_gripper_controller
+        --timeout 20" />
+     
+</launch>

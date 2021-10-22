@@ -1,0 +1,8 @@
+prefix=/home/jari/rost_ws/devel
+
+Name: samk_test
+Description: Description of samk_test
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

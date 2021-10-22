@@ -1,0 +1,8 @@
+prefix=/home/jari/rost_ws/devel
+
+Name: elfin_basic_api
+Description: Description of elfin_basic_api
+Version: 0.0.0
+Cflags: -I/home/jari/rost_ws/devel/include -I/home/jari/rost_ws/src/rosi_elfin/src/elfin_robot/elfin_basic_api/include
+Libs: -L${prefix}/lib -lelfin_basic_api
+Requires: moveit_core moveit_ros_planning moveit_ros_planning_interface roscpp rospy tf tf_conversions

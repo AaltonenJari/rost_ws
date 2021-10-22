@@ -1,0 +1,8 @@
+prefix=/home/jari/rost_ws/install
+
+Name: elfin_ethercat_driver
+Description: Description of elfin_ethercat_driver
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lelfin_ethercat_driver
+Requires: controller_manager diagnostic_updater hardware_interface joint_limits_interface roscpp rospy sensor_msgs soem tf trajectory_msgs transmission_interface

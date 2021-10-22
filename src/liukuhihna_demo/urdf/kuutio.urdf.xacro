@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="kuutio">
+    <xacro:macro name="kuutio" params="pun vih sininen gazebo">
+        <link name="kuutio">
+            <inertial>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <mass value="10" />
+                <inertia ixx="0.0042" ixy="0" ixz="0"
+                iyy="0.0032" iyz="0" izz="0.0042" />
+            </inertial>
+            <visual>
+                <geometry>
+                    <box size="0.1 0.1 0.1" />
+                </geometry>
+                <material name="$(gazebo)_mat">
+                    <color rgba="$(pun) $(vih) $(sininen) 1" />
+                </material>
+            </visual>
+            <collision>
+                <geometry>
+                    <box size="0.1 0.1 0.1" />
+                </geometry>
+            </collision>
+        </link>
+        <gazebo reference="kuutio">
+            <material>Gazebo/$(gazebo)</material>
+        </gazebo>
+    </xacro:macro>
+
+    <xacro:arg name="pun" default="1" />
+    <xacro:arg name="vih" default="1" />
+    <xacro:arg name="sininen" default="1" />
+    <xacro:arg name="gazebo" default="White" />
+
+    <xacro:kuutio pun="$(arg pun)" vih="$(arg vih)" sininen="$(arg sininen)" 
+    gazebo="$(arg gazebo)" />
+</robot>

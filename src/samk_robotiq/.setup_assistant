@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: samk_description
+    relative_path: urdf/samk_robotiq.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/samk_robotiq.srdf
+  CONFIG:
+    author_name: nobody
+    author_email: no@body.home
+    generated_timestamp: 1633371880

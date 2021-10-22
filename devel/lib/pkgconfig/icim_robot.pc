@@ -1,0 +1,8 @@
+prefix=/home/jari/rost_ws/devel
+
+Name: icim_robot
+Description: Description of icim_robot
+Version: 1.0.0
+Cflags: -I/home/jari/rost_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 
